@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="clearfix.css" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.header{
+				width: 1680px;
+				padding: 8px;
+				height: 40px;
+				margin: 0 auto;
+				margin-bottom: 30px;
+				position: sticky;
+				left: 0;
+				top: 0;
+			}
+			.left{
+				float: left;
+			}
+			.logo{
+				color: black;
+				float: left;
+				margin-right: 50px;
+				line-height: 50px;
+			}
+			.nav{
+				float: left;
+				margin-right: 30px;
+				line-height: 50px;
+			}
+			.changeone{
+				color: gainsboro;
+				margin-right: 30px;
+				font-size: 20px;
+				text-decoration: none;
+			}
+			.changeone:hover{
+				text-decoration: underline;
+				color: red;
+			}
+			.rightone{
+				float: right;
+				line-height: 50px;
+				font-size: 25px;
+			}
+			.denglu{
+				border: 3px solid blue;
+				border-radius: 4px;
+				padding: 2px 10px;
+				margin-right: 10px;
+				color: blue;
+				background-color: white;
+				text-decoration: none;
+			}
+			.denglu:hover{
+				text-decoration: underline;
+				background-color: black;
+				color: white;
+			}
+			.zhuce{
+				border: 3px solid green;
+				border-radius: 4px;
+				padding: 2px 10px;
+				margin-right: 10px;
+				color: white;
+				background: green;
+				text-decoration: none;
+			}
+			.zhuce:hover{
+				text-decoration: underline;
+				background-color: white;
+				color: black;
+			}
+			
+			.chrmoe{
+				width: 900px;
+				margin: 0 auto;
+			}
+			.video{
+				display: inline-block;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			footer{
+				background-color: #002752;
+			}
+			.footer{
+				width: 1080px;
+				margin: 0 auto;
+				padding: 10px 0;
+				color: white;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+			}
+			img{
+				vertical-align: middle;
+			}
+			p{
+				line-height: 1.5em;
+			}
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul li{
+				list-style: none;
+				width: inherit;
+				height: 150px;
+			}
+			.title{
+				text-align: center;
+				padding: 20px;
+				margin: 0 auto;
+			}
+			.title::before{
+				content: "";
+				display: inline-block;
+				border-bottom: 1px dotted #aaaaaa;
+				width: 100px;
+			}
+			.title::after{
+				content: "";
+				display: inline-block;
+				border-bottom: 1px dotted #aaaaaa;
+				width: 100px;
+			}
+			.section{
+				width: 1080px;
+				margin: 8px auto;
+			}
+			.div{
+				width: 320px;
+				float: left;
+				margin: 20px;
+				border-radius: 20px;
+				overflow: hidden;
+				box-shadow: 4px 4px 4px 4px #aaaaaa;
+				transition-duration: 0.5s;
+				transition-timing-function: ease-in-out;
+			}
+			.div:hover{
+				transform: scale(1.2);
+				color: orange;
+			}
+			.div li img{
+				width: 100%;
+				height: 100%;
+			}
+			.text{
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				font-weight: bold;
+				background-color: white;
+			}
+			
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.title{
+				text-align: center;
+				border-bottom: 1px solid #aaa;
+			}
+			.all{
+				background-color: #eeeeee;
+				width: 1080px;
+				border-radius: 10px;
+				margin: 0 auto;
+			}
+			.all ol{
+				width: 1080px;
+			}
+			.all ol li{
+				float: left;
+				list-style: none;
+				background-color: #ffffff;
+				width: 220px;
+				height: auto;
+				padding: 10px;
+				margin: 4px;
+				border: 2px solid #aaaaaa;
+				border-radius: 10px;
+			}
+			.all ol li a{
+				text-decoration: none;
+				color: orange;
+			}	
+			.all ol li a.playing{
+				text-decoration: underline;
+				color: red;
+			}
+			
+			.TOP{
+				border: 3px solid white;
+				background-color: red;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;	
+				text-decoration: none;
+				color: white;
+				line-height: 50px;
+				text-align: center;
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header clearfix">
+			<div class="left">
+				<h1 class="logo">NOC 新云课堂</h1>
+				<nav class="nav">
+					<a class="changeone" href="#" style="font-weight: bold;color: black;">首页</a>
+					<a class="changeone" href="#">课程分类</a>
+					<a class="changeone" href="#">直播课堂</a>
+					<a class="changeone" href="#">阶段测试</a>
+				</nav>
+			</div>
+			<div class="rightone">
+				<a href="#" class="button denglu">登录</a>
+				<a href="#" class="button zhuce">注册</a>
+			</div>
+		</header>
+		
+		<div id="top" class="chrmoe">
+		    <h2>Chrmoe安装</h2>
+			<video class="video" src="111.mp4" controls="controls" autoplay="autoplay" width="900px" height="400px"></video>	
+		</div>
+		
+		<section class="section clearfix">
+			<h2 class="title">成长之路</h2>
+			<ul class="clearfix">
+				<div class="div">
+					<li><a href="#"><img src="1.png"></a></li>
+					<div class="text">前端工程师</div>
+				</div>
+				<div class="div">
+					<li><a href="#"><img src="2.png"></a></li>
+					<div class="text">Java工程师</div>
+				</div>
+				<div class="div">
+					<li><a href="#"><img src="3.png"></a></li>
+					<div class="text">Python工程师</div>
+				</div>
+			</ul>
+		</section>
+		
+		<div class="all clearfix">
+			<h4 class="title">课程列表</h4>
+			<p>
+				<ol>
+					<li><a class="playing" href="#">Chrome安装</a></li>
+					<li><a href="#">Web描述</a></li>
+					<li><a href="#">HTML5概述</a></li>
+					<li><a href="#">HTML5新特性</a></li>
+					<li><a href="#">HTML5语法与特性</a></li>
+					<li><a href="#">HTML5页面编码设定</a></li>
+					<li><a href="#">HTML5段落</a></li>
+					<li><a href="#">HTML5超链接</a></li>
+					<li><a href="#">HTML5图片</a></li>
+					<li><a href="#">HTML5列表</a></li>
+					<li><a href="#">HTML5表格</a></li>	
+				</ol>
+			</p>
+		</div>
+		
+		<footer>
+			<div class="footer">
+				<p>
+					公司地址：xx省xxx市<br>
+					<a href="tel:0123-0000000">联系电话：xxxx-xxxxxxxx</a><br>
+					<a href="mailto:123@qq.com">详细邮箱：xxxx@xxx.xxx</a>
+				</p>
+				<p>
+					<img src="footer_logo05.gif">
+					<img src="footer_logo10_1.gif">
+				</p>
+				<p>
+					Copyright &#169 2020
+				</p>
+			</div>
+		</footer>
+		<a class="TOP" href="#top">TOP</a>
+	</body>
+</html>
